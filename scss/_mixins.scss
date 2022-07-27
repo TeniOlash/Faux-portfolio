@@ -1,0 +1,28 @@
+@mixin transition-ease {
+  transition: 350ms ease-out;
+}
+@mixin normal-font {
+  line-height: 1;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+@mixin special-header {
+  z-index: 1;
+  color: $text-color;
+  position: fixed;
+  top: 0px;
+  border-bottom: solid 3px $primary-color;
+  background-color: rgba($accent, 0.7);
+  padding-top: 1rem;
+  height: 3.2rem;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+@mixin projects-title {
+  visibility: hidden;
+  color: $accent;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}

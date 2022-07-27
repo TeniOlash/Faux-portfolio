@@ -1,0 +1,102 @@
+@include media-md {
+  .active {
+    h3 {
+      visibility: hidden;
+    }
+  }
+  .menu-bars,
+  .times {
+    visibility: hidden;
+  }
+  .menu {
+    text-transform: uppercase;
+    background-color: rgba($text-color, 0.9);
+    padding: 2rem;
+    position: static;
+    visibility: visible;
+    height: 4rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    line-height: 1;
+    font-size: 1rem;
+    transform: none;
+    transition: none;
+
+    .nav_items {
+      display: flex;
+      flex-direction: row;
+      .nav__item {
+        margin: 3rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        a {
+          color: $accent;
+          text-decoration: none;
+          display: inline-block;
+          width: max-content;
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+  .about {
+    .about-me {
+      p {
+        line-height: 2rem;
+        padding: 18rem 5rem;
+      }
+    }
+  }
+  .projects {
+    .my-projects {
+      .bg-img {
+        width: 80%;
+        height: 15rem;
+        margin: 2rem auto;
+        padding: 1rem 4rem;
+      }
+    }
+  }
+}
+
+@include media-lg {
+  .about {
+    .about-me {
+      p {
+        line-height: 2rem;
+        padding: 20rem 8rem;
+      }
+    }
+  }
+  .projects {
+    .my-projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 20rem;
+      grid-gap: 6rem 0rem;
+      .bg-img {
+        margin: auto;
+        padding: 0;
+        width: 90%;
+        height: 12rem;
+      }
+    }
+  }
+  .social-links {
+    bottom: 92%;
+    left: 90%;
+    .social__icon {
+      a {
+        color: $primary-color;
+
+        &:hover {
+          color: $accent;
+        }
+      }
+    }
+  }
+}

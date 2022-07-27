@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  background-image: linear-gradient(135deg, #faa, #aaf);
+}
+
+.interface {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-align: center;
+  font-size: larger;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.result {
+  text-align: center;
+  font-size: 150px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.btn {
+  width: 8rem;
+  height: 1.8em;
+  border: solid 2px #aaf;
+  margin: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button {
+  color: #8f5080;
+  background-color: #faa;
+  border-radius: 10%;
+}
+
+button:hover {
+  color: #aaf;
+  background-color: #885088;
+}

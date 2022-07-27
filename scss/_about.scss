@@ -1,0 +1,31 @@
+@import 'mixins';
+
+.about {
+  .about-me {
+    background-image: url(../images/worktable.jpg);
+    width: 100%;
+    height: 16rem;
+    margin: auto;
+    background-size: cover;
+    color: $text-color;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    p {
+      padding: 16rem 1rem;
+      @include normal-font();
+      line-height: 1;
+      font-size: 1.5rem;
+      word-spacing: 0.4rem;
+      text-align: center;
+      margin: 1rem;
+    }
+    h3 {
+      @include special-header();
+      line-height: 1;
+      text-align: center;
+      width: 100vw;
+    }
+  }
+}

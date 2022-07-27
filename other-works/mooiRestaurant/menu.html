@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MOOI | MENU</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <!--//////NAVIGATION//////-->
+    <nav
+      class="navbar navbar-expand-md navbar-light fixed-top py-3 bg-primary shadow"
+      id="mainNav"
+    >
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="./index.html">
+          <img
+            class="rounded-3"
+            src="./assets/images/pexels-magda-ehlers-1337380.jpg"
+            alt="logo"
+            width="100px"
+          />
+        </a>
+        <button
+          class="navbar-toggler navbar-toggler-right"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul
+            class="navbar-nav ms-auto my-2 my-lg-0 nav-menu text-uppercase text-secondary"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#features">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menu">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#faq">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--//////NAVIGATION END///////-->
+    <!-- FOOD CARD MENU -->
+    <div class="food-menu container-fluid my-5">
+      <h2
+        class="border-bottom border-3 border-primary px-5 w-50 text-center mx-auto mb-4"
+      >
+        Our Menu
+      </h2>
+
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link active"
+            id="breakfast-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#breakfast"
+            type="button"
+            role="tab"
+            aria-controls="breakfast"
+            aria-selected="true"
+          >
+            Breakfast
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="dish-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#dish"
+            type="button"
+            role="tab"
+            aria-controls="dish"
+            aria-selected="false"
+          >
+            Dishes & Desserts
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="nav-link"
+            id="meals-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#meals"
+            type="button"
+            role="tab"
+            aria-controls="meals"
+            aria-selected="false"
+          >
+            Full Meals
+          </button>
+        </li>
+      </ul>
+
+      <!-- Tab panes -->
+      <div class="tab-content">
+        <!-- //////BREAKFAST PANEL////// -->
+        <div
+          class="tab-pane active"
+          id="breakfast"
+          role="tabpanel"
+          aria-labelledby="breakfast-tab"
+        >
+          <h4 class="my-4">Browse our breakfast menu...</h4>
+          <div class="container-fluid" id="breakfast-menu">
+            <div class="row">
+              <div class="col-9 col-sm-12 col-md-10 text-center mx-auto">
+                <div class="card-group">
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/coffee-842020_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Ginger bread and Coffee</h4>
+                        <p class="card-text">&dollar;4.99</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/beans-1834984_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Beans, Bread & Eggs</h4>
+                        <p class="card-text">&dollar;6.99</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/hamburger-494706_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Vegan Burger</h4>
+                        <p class="card-text">&dollar;3.99</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //////BREAKFAST PANEL END////// -->
+
+        <!-- //////DESSERTS PANEL////// -->
+        <div
+          class="tab-pane"
+          id="dish"
+          role="tabpanel"
+          aria-labelledby="dish-tab"
+        >
+          <h4 class="my-4">Check out our delightful Dishes and Desserts...</h4>
+          <div class="container-fluid" id="desserts-menu">
+            <div class="row">
+              <div class="col-9 col-sm-12 col-md-10 text-center mx-auto">
+                <div class="card-group">
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/strawberry-dessert-2191973_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Strawberry Dessert</h4>
+                        <p class="card-text">&dollar;5.99</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/pizza-2068272_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Large Pizza</h4>
+                        <p class="card-text">&dollar;12.99</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/pasta-3547078_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Pasta</h4>
+                        <p class="card-text">&dollar;9.99</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/pizza-5275191_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Medium Pizza</h4>
+                        <p class="card-text">&dollar;9.99</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //////DESSERTS PANEL END////// -->
+
+        <!-- //////MEALS PANEL////// -->
+        <div
+          class="tab-pane"
+          id="meals"
+          role="tabpanel"
+          aria-labelledby="meals-tab"
+        >
+          <h4 class="my-4">Craving a full meal?, here are our options...</h4>
+          <div class="container-fluid" id="meals-menu">
+            <div class="row">
+              <div class="col-9 col-sm-12 col-md-10 text-center mx-auto">
+                <div class="card-group">
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/meat-123668_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Grilled Steak</h4>
+                        <p class="card-text">&dollar;10.99</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/teriyaki.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Beef Teriyaki</h4>
+                        <p class="card-text">&dollar;13.99</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="card shadow bg-primary bg-opacity-50 mx-1">
+                    <img
+                      class="card-img-top"
+                      src="./assets/images/meat-skewer-1440105_1280.jpg"
+                      alt="Card image cap"
+                    />
+                    <div class="card-body">
+                      <a href="#" class="text-decoration-none text-dark">
+                        <h4 class="card-title">Meat Skewer</h4>
+                        <p class="card-text">&dollar;8.99</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //////MEALS PANEL END////// -->
+      </div>
+    </div>
+    <!-- //////SCRIPTS////// -->
+    <script src="./assets/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

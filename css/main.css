@@ -1,0 +1,554 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background-color: #888;
+  overflow: hidden;
+}
+
+header {
+  position: fixed;
+  z-index: 5;
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 600;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  font-size: 1.4rem;
+  line-height: 3rem;
+}
+
+.social-links {
+  position: fixed;
+  bottom: 1rem;
+  left: 0px;
+}
+.social-links .social_icons {
+  display: flex;
+  flex-direction: row;
+}
+.social-links .social__icon a {
+  padding: 0.5rem;
+  color: #22debf;
+}
+.social-links .social__icon a:hover {
+  color: #8f57c2;
+}
+
+footer p {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  color: #222;
+}
+
+.home {
+  color: #22debf;
+  background-image: linear-gradient(to right, #22debf, 0.4, #8f57c2, 0.6);
+  background: linear-gradient(to bottom left, rgba(34, 222, 191, 0.5), rgba(143, 87, 194, 0.8)), url(../images/worktable2.jpg) right center;
+  background-size: cover;
+}
+.home span {
+  color: #8f57c2;
+}
+.home .intro {
+  position: relative;
+  top: 35vh;
+  margin: auto;
+  width: 90%;
+}
+.home hr {
+  outline: solid 3px #222;
+  max-width: 100%;
+  margin-top: 4px;
+}
+
+.menu {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+  line-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  visibility: hidden;
+  transition: 350ms ease-out;
+  transform: translateX(100%);
+}
+.menu .times {
+  color: #f33;
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  cursor: pointer;
+  transition: 350ms ease-out;
+}
+.menu .times:hover {
+  transform: rotate(180deg);
+}
+
+.show-menu {
+  background-color: rgba(34, 34, 34, 0.95);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 2rem;
+  line-height: 4rem;
+  visibility: visible;
+  height: 100%;
+  width: 100%;
+  transition: 350ms ease-out;
+  transform: translateX(0%);
+}
+.show-menu .social_icons {
+  position: relative;
+}
+.show-menu .nav__item:hover {
+  background-color: #8f57c2;
+}
+.show-menu .nav__item a {
+  position: relative;
+  top: 50%;
+  text-decoration: none;
+  color: #8f57c2;
+  display: block;
+  width: 100vw;
+  transition: 350ms ease-out;
+}
+.show-menu .nav__item a:hover {
+  color: #22debf;
+  transform: scale(1.05);
+  transform: translateX(4rem);
+}
+
+.menu-bars {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+}
+.menu-bars .burger {
+  z-index: 5;
+  border: 0;
+  color: #8f57c2;
+  background: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: 350ms ease-out;
+}
+.menu-bars .burger:hover {
+  transform: rotate(90deg);
+}
+
+.about .about-me {
+  background-image: url(../images/worktable.jpg);
+  width: 100%;
+  height: 16rem;
+  margin: auto;
+  background-size: cover;
+  color: #222;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+}
+.about .about-me p {
+  padding: 16rem 1rem;
+  line-height: 1;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-size: 1.5rem;
+  word-spacing: 0.4rem;
+  text-align: center;
+  margin: 1rem;
+}
+.about .about-me h3 {
+  z-index: 1;
+  color: #222;
+  position: fixed;
+  top: 0px;
+  border-bottom: solid 3px #22debf;
+  background-color: rgba(221, 221, 221, 0.7);
+  padding-top: 1rem;
+  height: 3.2rem;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  text-align: center;
+  line-height: 1;
+  text-align: center;
+  width: 100vw;
+}
+
+body {
+  background-color: #ddd;
+  overflow-y: scroll;
+}
+
+.projects .hero {
+  background-image: url(../images/codescreen.jpg);
+  width: 100%;
+  height: 16rem;
+  margin: auto;
+  background-size: cover;
+}
+.projects .hero h3 {
+  z-index: 1;
+  color: #222;
+  position: fixed;
+  top: 0px;
+  border-bottom: solid 3px #22debf;
+  background-color: rgba(221, 221, 221, 0.7);
+  padding-top: 1rem;
+  height: 3.2rem;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  text-align: center;
+  line-height: 1;
+  text-align: center;
+}
+.projects .hero p {
+  color: #ddd;
+  padding: 10rem 2rem 0;
+  line-height: 1;
+  text-align: center;
+}
+.projects .my-projects .bg-img {
+  position: relative;
+  width: 100%;
+  height: 12rem;
+  border-bottom: 3px #8f57c2 solid;
+  transition: 350ms ease-out;
+}
+.projects .my-projects .bg-img .links {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  right: 50%;
+}
+.projects .my-projects .bg-img .links a {
+  padding: 0rem 2rem;
+  color: #22debf;
+}
+.projects .my-projects .bg-img .links a:hover {
+  color: #222;
+}
+.projects .my-projects .p1 {
+  background: url(../images/time.png) center;
+  background-size: cover;
+}
+.projects .my-projects .p1 .project-title {
+  visibility: hidden;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.projects .my-projects .p1:hover {
+  background: linear-gradient(to left, rgba(221, 221, 221, 0.6), rgba(34, 34, 34, 0.8)), url(../images/time.png);
+  background-size: cover;
+  transform: scale(1.1);
+}
+.projects .my-projects .p1:hover .project-title {
+  visibility: visible;
+}
+.projects .my-projects .p2 {
+  background: url(../images/colors.jpg) center;
+  background-size: cover;
+}
+.projects .my-projects .p2 .project-title {
+  visibility: hidden;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.projects .my-projects .p2:hover {
+  background: linear-gradient(to left, rgba(221, 221, 221, 0.6), rgba(34, 34, 34, 0.8)), url(../images/colors.jpg);
+  background-size: cover;
+  transform: scale(1.1);
+}
+.projects .my-projects .p2:hover .project-title {
+  visibility: visible;
+}
+.projects .my-projects .p3 {
+  background: url(../images/nature.png) center;
+  background-size: cover;
+}
+.projects .my-projects .p3 .project-title {
+  visibility: hidden;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.projects .my-projects .p3:hover {
+  background: linear-gradient(to left, rgba(221, 221, 221, 0.6), rgba(34, 34, 34, 0.8)), url(../images/nature.png);
+  background-size: cover;
+  transform: scale(1.1);
+}
+.projects .my-projects .p3:hover .project-title {
+  visibility: visible;
+}
+.projects .my-projects .p4 {
+  background: url(../images/startup.jpg) center;
+  background-size: cover;
+}
+.projects .my-projects .p4 .project-title {
+  visibility: hidden;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.projects .my-projects .p4:hover {
+  background: linear-gradient(to left, rgba(221, 221, 221, 0.6), rgba(34, 34, 34, 0.8)), url(../images/startup.jpg);
+  background-size: cover;
+  transform: scale(1.1);
+}
+.projects .my-projects .p4:hover .project-title {
+  visibility: visible;
+}
+.projects .my-projects .p5 {
+  background: url(../images/mooi.png) center;
+  background-size: cover;
+}
+.projects .my-projects .p5 .project-title {
+  visibility: hidden;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.projects .my-projects .p5:hover {
+  background: linear-gradient(to left, rgba(221, 221, 221, 0.6), rgba(34, 34, 34, 0.8)), url(../images/mooi.png);
+  background-size: cover;
+  transform: scale(1.1);
+}
+.projects .my-projects .p5:hover .project-title {
+  visibility: visible;
+}
+.projects .my-projects .p6 {
+  background: url(../images/calc.jpg) center;
+  background-size: cover;
+}
+.projects .my-projects .p6 .project-title {
+  visibility: hidden;
+  color: #ddd;
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.projects .my-projects .p6:hover {
+  background: linear-gradient(to left, rgba(221, 221, 221, 0.6), rgba(34, 34, 34, 0.8)), url(../images/calc.jpg);
+  background-size: cover;
+  transform: scale(1.1);
+}
+.projects .my-projects .p6:hover .project-title {
+  visibility: visible;
+}
+.projects .my-projects p {
+  line-height: 1;
+  font-weight: normal;
+  font-size: 1.2rem;
+  padding: 1rem 1.2rem;
+  line-height: 1.5rem;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+.contact-me h3 {
+  z-index: 1;
+  color: #222;
+  position: fixed;
+  top: 0px;
+  border-bottom: solid 3px #22debf;
+  background-color: rgba(221, 221, 221, 0.7);
+  padding-top: 1rem;
+  height: 3.2rem;
+  width: 100%;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  text-align: center;
+  line-height: 1;
+  text-align: center;
+}
+
+.contact {
+  background-color: #ddd;
+  color: #222;
+}
+.contact form {
+  background-image: linear-gradient(to top left, rgba(34, 222, 191, 0.2), rgba(143, 87, 194, 0.6));
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.contact form sup {
+  color: red;
+}
+.contact form .methods {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #ddd;
+  font-size: 1rem;
+  font-weight: 100;
+  background-color: rgba(143, 87, 194, 0.3);
+}
+.contact form .methods li {
+  margin: 1rem;
+}
+.contact section {
+  margin: 4rem 0;
+}
+.contact .text-fields input {
+  width: 20rem;
+  height: 2.5rem;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  border: 2px solid #22debf;
+}
+.contact .radio {
+  width: 20rem;
+  border: solid 3px #22debf;
+  margin: auto;
+}
+.contact .radio li {
+  margin: 1rem 1rem;
+  text-align: left;
+}
+.contact button {
+  width: 10rem;
+  height: 2rem;
+  color: #222;
+  background-color: #ddd;
+  font-size: 1.3rem;
+  border: solid 2px #222;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.contact button:hover {
+  border: solid 2px #ddd;
+  color: #8f57c2;
+  transform: scale(1.01);
+}
+
+@media screen and (min-width: 768px) {
+  .active h3 {
+    visibility: hidden;
+  }
+  .menu-bars,
+.times {
+    visibility: hidden;
+  }
+  .menu {
+    text-transform: uppercase;
+    background-color: rgba(34, 34, 34, 0.9);
+    padding: 2rem;
+    position: static;
+    visibility: visible;
+    height: 4rem;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    line-height: 1;
+    font-size: 1rem;
+    transform: none;
+    transition: none;
+  }
+  .menu .nav_items {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu .nav_items .nav__item {
+    margin: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .menu .nav_items .nav__item a {
+    color: #ddd;
+    text-decoration: none;
+    display: inline-block;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  .menu .nav_items .nav__item a:hover {
+    color: #22debf;
+  }
+  .about .about-me p {
+    line-height: 2rem;
+    padding: 18rem 5rem;
+  }
+  .projects .my-projects .bg-img {
+    width: 80%;
+    height: 15rem;
+    margin: 2rem auto;
+    padding: 1rem 4rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about .about-me p {
+    line-height: 2rem;
+    padding: 20rem 8rem;
+  }
+  .projects .my-projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 20rem;
+    grid-gap: 6rem 0rem;
+  }
+  .projects .my-projects .bg-img {
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    height: 12rem;
+  }
+  .social-links {
+    bottom: 92%;
+    left: 90%;
+  }
+  .social-links .social__icon a {
+    color: #22debf;
+  }
+  .social-links .social__icon a:hover {
+    color: #ddd;
+  }
+}/*# sourceMappingURL=main.css.map */

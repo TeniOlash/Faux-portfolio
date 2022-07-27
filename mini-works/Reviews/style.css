@@ -1,0 +1,108 @@
+/* initailizing margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #dfdfdf;
+}
+/* centering card with display flex */
+.container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+/* sub styles */
+h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 50px;
+  color: #dbb776;
+}
+.comment {
+  color: #ccc;
+  max-height: 30px;
+}
+.name {
+  font-weight: 800;
+}
+hr {
+  color: #ccc;
+  width: 70%;
+  height: 1px;
+  background-color: #ccc;
+  border: solid #ccc 2px;
+  border-radius: 10%;
+  margin: 5px auto;
+}
+.rating {
+  margin: 5px;
+}
+button {
+  background-color: #4d8da8;
+  border: 0;
+  color: #ccc;
+  cursor: pointer;
+}
+/* card styling and setting card to display grid */
+.review-box {
+  text-align: center;
+  font-size: 13px;
+  width: 20rem;
+  height: 14rem;
+  background-color: #4d8da8;
+  color: #dbb776;
+  box-shadow: #457b9288 -3px 6px 6px;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 15%;
+  display: grid;
+  grid-template: repeat(6, 1fr) / repeat(12, 1fr);
+}
+/* arranging items in the grid */
+img {
+  border-radius: 50%;
+}
+
+.next {
+  grid-column: 12 / -1;
+  grid-row: 4 / 5;
+}
+.prev {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+.card-items {
+  margin: 4px;
+  grid-column: 1 / -1;
+}
+
+.rating {
+  color: goldenrod;
+  grid-column: 5 / 9;
+  grid-row: 4 / 5;
+}
+
+.btt {
+  grid-column: 5 / 9;
+  grid-row: 5 / 6;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  color: #ccc;
+}
+
+.btt:active {
+  color: #ccc;
+  transform: scale(0.96);
+}
+button:hover {
+  color: #dbb776;
+}

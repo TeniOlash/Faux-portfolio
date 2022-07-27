@@ -1,0 +1,32 @@
+.home {
+  color: $primary-color;
+  background-image: linear-gradient(
+    to right,
+    $primary-color,
+    0.4,
+    $secondary-color,
+    0.6
+  );
+  background: linear-gradient(
+      to bottom left,
+      rgba($primary-color, 0.5),
+      rgba($secondary-color, 0.8)
+    ),
+    url(../images/worktable2.jpg) right center;
+  background-size: cover;
+  span {
+    color: $secondary-color;
+  }
+
+  .intro {
+    position: relative;
+    top: 35vh;
+    margin: auto;
+    width: 90%;
+  }
+  hr {
+    outline: solid 3px $text-color;
+    max-width: 100%;
+    margin-top: 4px;
+  }
+}

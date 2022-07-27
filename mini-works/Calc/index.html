@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../Resources/fontawesome-free-5.15.3-web/css/all.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc">
+        <main class="calc-body">
+          <section class="calc-screen">
+            <div class="calc-display" />
+              <span class="active"></span>
+              <span class="on-signal">on</span>
+            </div>
+          </section>
+          <div class="calc-buttons">
+            <section class="calc-switches">
+              <button type="button" role="button" class="power-on">
+                <i class="fas fa-power-off"> ON </i>
+              </button>
+              <button type="button" role="button" class="power-off">
+                <i class="fas fa-power-off"> OFF </i>
+              </button>
+            </section>
+            <section class="calc-digits">
+              <button type="button" role="button" class="num nine">9</button>
+              <button type="button" role="button" class="num eight">8</button>
+              <button type="button" role="button" class="num seven">7</button>
+              <button type="button" role="button" class="num six">6</button>
+              <button type="button" role="button" class="num five">5</button>
+              <button type="button" role="button" class="num four">4</button>
+              <button type="button" role="button" class="num three">3</button>
+              <button type="button" role="button" class="num two">2</button>
+              <button type="button" role="button" class="num one">1</button>
+              <button type="button" role="button" class="num zero btn-big">0</button>
+              <button type="button" role="button" class="num dot">.</button>
+            </section>
+            <section class="calc-operators">
+              <button type="button" role="button" class=" opr plus"><i class="fas fa-plus"></i><span class="operator"> + </span></button>
+              <button type="button" role="button" class=" opr minus"><i class="fas fa-minus"></i><span class="operator"> - </span></button>
+              <button type="button" role="button" class=" opr divide"><i class="fas fa-divide"><span class="operator"> / </span></i></button>
+              <button type="button" role="button" class=" opr multiply"><i class="fas fa-times"></i><span class="operator"> * </span></i></button>
+              <button type="button" role="button" class="equals btn-big"><i class="fas fa-equals"></i>
+              </button>
+              <button type="button" role="button" class="delete"><i class="fas fa-backspace"></i></button>
+              <button type="button" role="button" class="reset">C</button>
+            </section>
+          </div>
+        </main>
+      </div>
+    </div>
+    <i class="fas fa-playstation fa-10x"></i>
+    <script src="main.js"></script>
+  </body>
+</html>

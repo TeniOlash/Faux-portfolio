@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini-Project: Review Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="../Resources/fontawesome-free-5.15.3-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- container class start-->
+    <div class="container">
+      <h2>
+        Reviews
+        <hr />
+      </h2>
+      <!-- review-box -->
+      <div class="review-box">
+        <!-- buttons -->
+        <button class="btn prev fas fa-chevron-left"></button>
+        <button class="btn next fas fa-chevron-right"></button>
+        <!-- content in review box -->
+        <div class="card-items">
+          <div class="img-container">
+            <!-- reviewer details -->
+            <img
+              src="./images/person (1).jpg"
+              alt="review"
+              width="50px"
+              height="50px"
+              id="image"
+            />
+            <div class="details">
+              <p class="name">Selty Citurllson</p>
+              <p class="position">UX designer</p>
+              <br />
+            </div>
+          </div>
+          <!-- customer review -->
+          <div class="comment">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam
+              ipsam aut sunt cumque aspernatur perferendis.
+            </p>
+          </div>
+        </div>
+        <!-- fontawesome star ratings -->
+        <div class="rating">
+          <div class="fas fa-star"></div>
+          <div class="fas fa-star"></div>
+          <div class="fas fa-star"></div>
+          <div class="fas fa-star"></div>
+          <div class="fas fa-star"></div>
+        </div>
+        <!-- star ratings end -->
+        <button class="btt">Randomize Card</button>
+      </div>
+      <!-- review-box end -->
+    </div>
+    <!-- container class end -->
+    <!-- javascript -->
+    <script src="app.js"></script>
+  </body>
+</html>
